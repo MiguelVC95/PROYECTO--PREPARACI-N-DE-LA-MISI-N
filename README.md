@@ -27,11 +27,30 @@ Repositorio: https://github.com/MiguelVC95/PROYECTO--PREPARACI-N-DE-LA-MISI-N
 | 3. Soporte para la tripulación | `ejercicio3_soporte_tripulacion.py` | Condicional doble | Verifica que el oxígeno **y** las provisiones sean suficientes |
 | 4. Autorización de lanzamiento | `ejercicio4_autorizacion.py` | Condicional doble sin anidación | Autoriza solo si combustible (ida + regreso + reserva), oxígeno, energía y provisiones son suficientes |
 
+---
+
 ## Estructura del repositorio
 
-```text
+    PROYECTO--PREPARACI-N-DE-LA-MISI-N/
+    ├── README.md
+    ├── avance1/
+    │   ├── ejercicio1_recursos.py
+    │   ├── ejercicio2_combustible.py
+    │   ├── ejercicio3_soporte_tripulacion.py
+    │   └── ejercicio4_autorizacion.py
+    └── documentacion/
+        └── avance1/
+            ├── Avance1_MisionOrbita.pdf
+            ├── ejercicio1_recursos.drawio
+            ├── ejercicio1_recursos.png
+            ├── ejercicio2_combustible.drawio
+            ├── ejercicio2_combustible.png
+            ├── ejercicio3_soporte_tripulacion.drawio
+            ├── ejercicio3_soporte_tripulacion.png
+            ├── ejercicio4_autorizacion.drawio
+            └── ejercicio4_autorizacion.png
 
-PROYECTO--PREPARACI-N-DE-LA-MISI-N/ ├── README.md ├── avance1/ │ ├── ejercicio1_recursos.py │ ├── ejercicio2_combustible.py │ ├── ejercicio3_soporte_tripulacion.py │ └── ejercicio4_autorizacion.py └── documentacion/ └── avance1/ ├── [Avance1_MisionOrbita.pdf] ├── ejercicio1_recursos.drawio ├── ejercicio1_recursos.png ├── ejercicio2_combustible.drawio ├── ejercicio2_combustible.png ├── ejercicio3_soporte_tripulacion.drawio ├── ejercicio3_soporte_tripulacion.png ├── ejercicio4_autorizacion.drawio └── ejercicio4_autorizacion.png
+---
 
 ## Ejecución
 
@@ -44,8 +63,6 @@ PROYECTO--PREPARACI-N-DE-LA-MISI-N/ ├── README.md ├── avance1/ │ �
 
 **Opción A – Clonar con Git:**
 
-```bash
-
 git clone https://github.com/MiguelVC95/PROYECTO--PREPARACI-N-DE-LA-MISI-N.git 
 cd PROYECTO--PREPARACI-N-DE-LA-MISI-N
 
@@ -53,22 +70,6 @@ cd PROYECTO--PREPARACI-N-DE-LA-MISI-N
 La carpeta se llamará `PROYECTO--PREPARACI-N-DE-LA-MISI-N-main`.
 
 ### 2. Ejecutar los programas
-
-Desde la carpeta raíz del repositorio:
-
-**Windows (PowerShell o CMD):**
-
-```powershell
-
-python avance1\ejercicio1_recursos.py python avance1\ejercicio2_combustible.py python avance1\ejercicio3_soporte_tripulacion.py python avance1\ejercicio4_autorizacion.py
-
-> Si `python` no se reconoce, usar `py` en su lugar.
-
-**macOS / Linux:**
-
-```bash
-
-python3 avance1/ejercicio1_recursos.py python3 avance1/ejercicio2_combustible.py python3 avance1/ejercicio3_soporte_tripulacion.py python3 avance1/ejercicio4_autorizacion.py
 
 **Desde Visual Studio Code:** abrir la carpeta del repositorio (**Archivo → Abrir carpeta**),
 abrir el archivo `.py` deseado y presionar **▷ Run Python File**.
@@ -91,11 +92,11 @@ Los casos de prueba completos (exitosos, límite y de fallo) están en el PDF de
 
 ## Documentación
 
-Toda la documentación del Avance 1 se encuentra en [`documentacion/avance1/`](documentacion/avance1/).
+Toda la documentación del Avance 1 se encuentra en [`documentacion/avance1/`](MiguelVC95/PROYECTO--PREPARACI-N-DE-LA-MISI-N).
 
 | Contenido | Archivo |
 |---|---|
-| Informe completo (portada, tablas de variables, diagramas, casos de prueba y capturas) | [Avance1_MisionOrbita.pdf](documentacion/avance1/Avance1_MisionOrbita.pdf) |
+| Informe completo (portada, tablas de variables, diagramas, casos de prueba y capturas) | [Primer avance - Proyecto Programacion .pdf](PROYECTO--PREPARACI-N-DE-LA-MISI-N/Primer avance - Proyecto Programacion .pdf) |
 | Diagrama Ejercicio 1 – Recursos | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaRecursos.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaRecursos.drawio) |
 | Diagrama Ejercicio 2 – Combustible | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaCombustible.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaCombustible.drawio) |
 | Diagrama Ejercicio 3 – Soporte tripulación | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaSoporteTripulacion.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaSoporteTripulacion.drawio) |
