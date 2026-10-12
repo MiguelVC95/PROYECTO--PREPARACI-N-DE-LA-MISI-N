@@ -1,5 +1,8 @@
 # ============================================================
 # Archivo: ejercicio4_autorizacion.py
+# Curso: SOFT-01 Principios de Programación 1 - Sección SCP0
+# Integrantes: Sharon Ávila Matute, Marcela Otarola Montoya, Miguel Angel Vargas Cedeño
+# Fecha: 12/10/2026        Versión: 1.0
 # Descripción: Determina si la misión puede ser autorizada
 # evaluando combustible, oxígeno, energía y provisiones.
 # ============================================================
