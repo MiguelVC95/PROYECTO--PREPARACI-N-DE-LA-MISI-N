@@ -20,4 +20,4 @@ provisiones_requeridas = int(input("Ingrese las provisiones requeridas: "))
 if (oxigeno_disponible >= oxigeno_requerido) and (provisiones_disponibles >= provisiones_requeridas):
         print ("La nave posee recursos suficientes para la tripulacion")
 else:
-        print ("La nave posee recursos suficientes para la tripualcion")
+        print ("La nave NO posee recursos suficientes para la tripualcion")
