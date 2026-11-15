@@ -1,130 +1,55 @@
-# Misión Órbita – Avance 1: Preparación de la misión
+# Misión Órbita – Proyecto de Programación I
 
-Simulador básico de exploración espacial en Python. En este primer avance se desarrollan
-cuatro algoritmos independientes que calculan y verifican los recursos necesarios antes
-de autorizar el lanzamiento de una misión.
+## Descripción
 
-Curso: SOFT-01 Principios de Programación 1 – Sección SCP0
-Universidad CENFOTEC – C3-2026
+Proyecto desarrollado para el curso SOFT-01 Principios de Programación I de la Universidad CENFOTEC, período C3-2026.
 
-Repositorio: https://github.com/MiguelVC95/PROYECTO--PREPARACI-N-DE-LA-MISI-N
+Misión Órbita es un simulador de exploración espacial desarrollado en Python. El proyecto se divide en avances que permiten aplicar progresivamente estructuras condicionales, ciclos, contadores y acumuladores.
 
 ## Integrantes
-- Sharon Avila M
+
+- Sharon Ávila
 - Miguel Vargas
-- Marcela Otarola
+- Marcela Otárola
+
+## Avance 1 – Preparación de la misión
+
+Incluye los ejercicios de planificación y verificación de recursos necesarios para preparar una misión espacial.
+
+## Avance 2 – Ejecución de la misión
+
+El segundo avance incluye cuatro ejercicios independientes:
+
+- **Ejercicio 5 – Selección del destino:** permite elegir Luna, Marte o Europa y determinar si los recursos disponibles autorizan la misión.
+- **Ejercicio 6 – Simulación del viaje:** simula el consumo diario de combustible, oxígeno, energía y provisiones durante el trayecto.
+- **Ejercicio 7 – Exploración científica:** administra las actividades de exploración, los recursos disponibles y la acumulación de puntos científicos.
+- **Ejercicio 8 – Regreso y supervivencia:** determina si la tripulación puede regresar a la Tierra o calcula su supervivencia estimada cuando queda varada.
 
 ## Requisitos
-- Python 3 instalado
-- Visual Studio Code (recomendado)
 
-## Descripción de los ejercicios
+- Python 3.
+- Visual Studio Code u otro editor compatible con Python.
+- Terminal para ejecutar los programas.
 
-| Ejercicio | Archivo | Estructura de control | Propósito |
-|---|---|---|---|
-| 1. Cálculo de recursos | `ejercicio1_recursos.py` | Secuencial | Calcula combustible (ida, regreso, reserva y total), oxígeno, energía y provisiones |
-| 2. Verificación de combustible | `ejercicio2_combustible.py` | Condicional simple | Calcula el combustible total y el adicional; advierte si el margen es menor que 10 |
-| 3. Soporte para la tripulación | `ejercicio3_soporte_tripulacion.py` | Condicional doble | Verifica que el oxígeno **y** las provisiones sean suficientes |
-| 4. Autorización de lanzamiento | `ejercicio4_autorizacion.py` | Condicional doble sin anidación | Autoriza solo si combustible (ida + regreso + reserva), oxígeno, energía y provisiones son suficientes |
+## Instrucciones de ejecución
 
----
+1. Descargar el repositorio.
+2. Abrir el proyecto en Visual Studio Code.
+3. Seleccionar el archivo Python correspondiente al ejercicio.
+4. Ejecutarlo mediante Python.
+5. Ingresar los datos solicitados en la consola.
 
-## Estructura del repositorio
-
-    PROYECTO--PREPARACI-N-DE-LA-MISI-N/
-    ├── README.md
-    ├── avance1/
-    │   ├── ejercicio1_recursos.py
-    │   ├── ejercicio2_combustible.py
-    │   ├── ejercicio3_soporte_tripulacion.py
-    │   └── ejercicio4_autorizacion.py
-    └── documentacion/
-        └── avance1/
-            ├── Avance1_MisionOrbita.pdf
-            ├── ejercicio1_recursos.drawio
-            ├── ejercicio1_recursos.png
-            ├── ejercicio2_combustible.drawio
-            ├── ejercicio2_combustible.png
-            ├── ejercicio3_soporte_tripulacion.drawio
-            ├── ejercicio3_soporte_tripulacion.png
-            ├── ejercicio4_autorizacion.drawio
-            └── ejercicio4_autorizacion.png
-
----
-
-## Ejecución
-
-### Requisitos
-- Python 3 instalado ([python.org](https://www.python.org/downloads/)).
-- Visual Studio Code (recomendado).
-- No se requieren librerías externas: los programas usan solo la consola.
-
-### 1. Obtener el código
-
-**Opción A – Clonar con Git:**
-
-git clone https://github.com/MiguelVC95/PROYECTO--PREPARACI-N-DE-LA-MISI-N.git 
-cd PROYECTO--PREPARACI-N-DE-LA-MISI-N
-
-**Opción B – Descargar ZIP:** botón **Code → Download ZIP** y descomprimir.
-La carpeta se llamará `PROYECTO--PREPARACI-N-DE-LA-MISI-N-main`.
-
-### 2. Ejecutar los programas
-
-**Desde Visual Studio Code:** abrir la carpeta del repositorio (**Archivo → Abrir carpeta**),
-abrir el archivo `.py` deseado y presionar **▷ Run Python File**.
-
-Cada programa solicita los datos en consola. Se deben ingresar **números enteros positivos**
-(excepto el nombre de la misión en el ejercicio 1).
-
-### 3. Prueba rápida (casos documentados)
-
-| Programa | Datos de entrada | Resultado esperado |
-|---|---|---|
-| Ejercicio 1 | Explorador I, 3, 5 | Total combustible = 90; Oxígeno = 35; Energía = 35; Provisiones = 18 |
-| Ejercicio 2 | 95, 40, 40 | Total = 90; Adicional = 5; muestra advertencia |
-| Ejercicio 3 | 35, 35, 18, 18 | "La nave posee recursos suficientes para la tripulación." |
-| Ejercicio 4 | 50, 40, 40, 50, 35, 40, 35, 25, 18 | "Lanzamiento no autorizado. La misión debe ser revisada." (solo alcanza para llegar) |
-
-Los casos de prueba completos (exitosos, límite y de fallo) están en el PDF de documentación.
-
----
+Cada ejercicio funciona de manera independiente.
 
 ## Documentación
 
-Toda la documentación del Avance 1 se encuentra en [`documentacion/avance1/`](MiguelVC95/PROYECTO--PREPARACI-N-DE-LA-MISI-N).
+La documentación del Avance 2 incluye las tablas de variables, los diagramas de flujo, los casos de prueba y las evidencias de ejecución.
 
-| Contenido | Archivo |
-|---|---|
-| Informe completo (portada, tablas de variables, diagramas, casos de prueba y capturas) | [Primer avance - Proyecto Programacion .pdf](PROYECTO--PREPARACI-N-DE-LA-MISI-N/Primer avance - Proyecto Programacion .pdf) |
-| Diagrama Ejercicio 1 – Recursos | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaRecursos.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaRecursos.drawio) |
-| Diagrama Ejercicio 2 – Combustible | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaCombustible.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaCombustible.drawio) |
-| Diagrama Ejercicio 3 – Soporte tripulación | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaSoporteTripulacion.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaSoporteTripulacion.drawio) |
-| Diagrama Ejercicio 4 – Autorización | [PNG](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaAutorizacion.drawio.png) · [drawio](PROYECTO--PREPARACI-N-DE-LA-MISI-N/DiagramaAutorizacion.drawio) |
+## Información académica
 
-- El **PDF** es el documento oficial de la entrega.
-- Los archivos **.png** son los diagramas exportados para lectura.
-- Los archivos **.drawio** son editables: se abren en [app.diagrams.net](https://app.diagrams.net)
-  con **Archivo → Abrir desde → Dispositivo**.
-
----
-
-## Restricciones técnicas cumplidas
-
-- Solo consola para entrada y salida, con variables simples y enteros positivos.
-- Sin ciclos, listas, tuplas, diccionarios ni colecciones.
-- Sin funciones `def`, sin librerías ni `import`, sin archivos, JSON ni POO.
-- Constantes en MAYÚSCULAS declaradas al inicio de cada archivo (sin números mágicos).
-- Variables en `snake_case`, indentación de 4 espacios y encabezado completo en cada archivo.
-- Código elaborado en Visual Studio Code como archivos `.py` independientes.
-
----
-
-## Reglas principales de la misión
-
-- El combustible total siempre incluye **ida + regreso + reserva de 10 unidades**.
-- Una misión con combustible suficiente **solo para llegar** no se autoriza, porque la tripulación quedaría varada.
-- El viaje de regreso dura la misma cantidad de días que el de ida.
-
-
+**Universidad:** CENFOTEC  
+**Curso:** SOFT-01 – Principios de Programación I  
+**Período:** C3-2026  
+**Docente:** Darío Rodríguez Obando  
+**Estado:** Completado
 
